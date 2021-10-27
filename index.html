@@ -1,0 +1,69 @@
+<html>
+
+ <head>
+   <title>Hand gestures</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+   <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+  
+   <link rel="stylesheet" type="text/css" href="style.css">
+ </head>
+
+ <body>
+   <div class="container">
+
+     <center>
+       <h3 class="btn btn-info heading">Hand gesture<br>
+         <span>&#128077</span>
+         <span>&#128078</span>
+         <span>&#9996</span>
+         <span>&#9997</span>
+         <span>&#128072</span>
+         <span>&#128073</span>
+       </h3>
+       <br><br>
+
+       <p style="font-size: 22px;">Take your selfie to generate hand gesture
+        <h3>It will be one of these hand gestures:</h3>
+        <h3 class="btn btn-info heading">Emotion to Emoji<br>
+          <span>&#128077</span>
+          <span>&#128078</span>
+          <span>&#9996</span>
+          </h3>
+       </p>
+       <div class="col-md-4 col-sm-12 col-xs-12">
+         <label>WEBCAM VIEW-</label>
+         <div id="camera"></div>
+         <br>
+         <br>
+         <button onclick="Click_pic()" class="btn btn-warning lol">Lights camera ACTION!!</button>
+       </div>
+       <div class="col-md-4 col-sm-12 col-xs-12">
+         <label>Prediction 1</label>
+         <p class="hand_name" id="hand_name1"></p>
+         <p class="hand" id="hand_1"></p>
+         
+       </div>
+       <div class="col-md-4 col-sm-12 col-xs-12">
+         <label>SNAPSHOT - </label>
+         <div id="result"></div>
+         <br>
+         <br>
+<button onclick="Predict_hand()" class="btn btn-success lol">PREDICT HAND GESTURE!</button>
+       </div>
+
+     </center>
+
+   </div>
+
+   <script src="main.js"></script>
+
+ </body>
+
+ </html>
+
+ 
